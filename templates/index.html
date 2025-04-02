@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TB Detection</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        input { margin: 10px; }
+        img { max-width: 300px; margin-top: 10px; border: 2px solid #ddd; padding: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Upload Chest X-ray for TB Detection</h1>
+    
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <input type="submit" value="Upload & Predict">
+    </form>
+
+    {% if result %}
+        <h2>Prediction: {{ result }}</h2>
+        <p>Confidence: {{ confidence }}</p>
+        <img src="{{ image_path }}" alt="Uploaded Image">
+    {% endif %}
+</body>
+</html>
