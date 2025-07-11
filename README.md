@@ -28,8 +28,7 @@ This project uses a CNN to analyze chest X-ray images and predict tuberculosis i
    cd Tuberculosis_Prediction_
    
 2. install all these dependencies
-   
-  tensorflow>=2.8.0, numpy, pandas, matplotlib, opencv-python, scikit-learn, seaborn, jupyterlab
+   tensorflow, numpy, pandas, matplotlib, opencv-python, scikit-learn, seaborn, jupyterlab
 
 
 ## 👨‍💻 Author
